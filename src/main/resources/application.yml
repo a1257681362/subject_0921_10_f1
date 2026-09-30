@@ -2,6 +2,8 @@ server:
   port: 8080
 
 spring:
+  autoconfigure:
+    exclude: org.apache.shiro.spring.boot.autoconfigure.ShiroAnnotationProcessorAutoConfiguration
   application:
     name: evops-base
   profiles:
